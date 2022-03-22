@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     //Faça um programa que leia 3 valores (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores.
+     var n1 = parseInt(prompt("Insira o primeiro valor"));
+     var n2 = parseInt(prompt("Insira o segundo valor"));
+     var n3 = parseInt(prompt("Insira o terceiro valor"));
+     var soma = 0;
+     if(n1<n2 && n1<3){
+        soma = n2 + n3;
+        alert(`A soma de ${n2} + ${n3} é ${soma}`);
+     }else if(n2<n1 && n2<n3){
+        soma = n1 + n3;
+        alert(`A soma de ${n1} + ${n3} é ${soma}`);
+     }else{
+          soma = n1 + n2;
+          alert(`A soma de ${n1} + ${n2} é ${soma}`);
+     }
+    </script>     
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<body>
+    
+
+</head>
+    <script>
+        window.alert('Programa para descobrir o perimetro do seu polígono')
+         var lados = parseInt(window.prompt('Digite o número de lados do seu polígono')) 
+         if(lados > 5 || lados <= 0){
+            window.alert('POLÍGONO NÃO IDENTIFICADO')
+         }else{
+            var n1 = parseInt(window.prompt('Digite o valor dos lados do seu polígonos'))
+         }
+         
+         var per = 0 
+
+         switch(lados){
+            case 3:
+            per = 3*n1
+            window.alert(`Você tem um triângulo com perimetro de ${per} cm`)
+            break
+            case 4:
+            per = 4*n1
+            window.alert(`Você tem um quadrado com perimetro de ${per} cm`)
+            break
+            case 5:
+            per = 5*n1
+            window.alert(`Você tem um pentágono com perimetro de ${per} cm`)
+            default:
+         }
+    </script>
+</body>
+</html>

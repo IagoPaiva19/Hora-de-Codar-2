@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var array = []
+         var soma = 0
+        for(var c=0 ; c<6; c++){
+            var num1 = parseInt(window.prompt('Digite o valor desejado'))
+            if(num1 < 72){
+                array.push(num1)
+            }
+        }
+        for(var c =0; c<array.length; c++) {
+            soma += array[c]
+        }
+
+        window.alert(`A soma desses valores dispensando os números maiores que 72 é igual a ${soma}, e  todos o valores informados são ${array}`)
+    </script>     
+</body>
+</html>
